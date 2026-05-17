@@ -1,3 +1,6 @@
+<img width="1501" height="891" alt="Screenshot 2026-05-17 at 6 03 01 PM" src="https://github.com/user-attachments/assets/eb93d0f8-09b7-4a66-9b14-a50e5efb2f7e" />
+<img width="1501" height="891" alt="Screenshot 2026-05-17 at 6 02 41 PM" src="https://github.com/user-attachments/assets/c77216b9-296b-4cf0-8f9c-a93dd74a0a5f" />
+<img width="1501" height="891" alt="Screenshot 2026-05-17 at 6 02 06 PM" src="https://github.com/user-attachments/assets/1e18ab4e-3142-4c03-932f-bc6689187482" />
 # Azure AD User Lifecycle Management (JML) Lab
 
 **Created by:** Tushar Arora  
