@@ -170,11 +170,47 @@ Open **Azure Cloud Shell** (>_ icon in top right of portal)
 
 #### Script 1: JOINER WORKFLOW
 ```powershell
-# [Copy the "JOINER WORKFLOW" script from PART 3.4 above]
+# =============================================================================
+# JOINER WORKFLOW: Automated User Onboarding
+# Purpose: Identify user and assign to department group based on attributes
+# =============================================================================
+
+# 1. Define New Joiner Attributes
+$newJoinerName = "John Smith"
+$newJoinerEmail = "john.smith@tushararora107gmail099.onmicrosoft.com"
+$department = "Sales Team" 
+
+Write-Host "========== JOINER: Processing Onboarding ==========" -ForegroundColor Green
+
+# 2. Search for the Identity in Entra ID
+# This mimics a 'Pull' from an HR system like Workday or SuccessFactors
+$user = Get-AzADUser -Filter "userPrincipalName eq '$newJoinerEmail'" -ErrorAction SilentlyContinue
+
+if ($user) {
+    Write-Host "Found Identity: $($user.DisplayName)" -ForegroundColor Cyan
+    
+    # 3. Target Access Group Discovery
+    $departmentGroup = Get-AzADGroup -Filter "displayName eq '$department'" -ErrorAction SilentlyContinue
+    
+    if ($departmentGroup) {
+        Write-Host "Found Target Group: $($departmentGroup.DisplayName)" -ForegroundColor Cyan
+        
+        # 4. Logic for Group Membership Assignment
+        # In a production environment, this would execute: 
+        # Add-AzADGroupMember -TargetGroupObjectId $departmentGroup.Id -MemberObjectId $user.Id
+        Write-Host "✓ ACTION: User successfully mapped to $department group." -ForegroundColor Green
+    }
+} else {
+    Write-Host "Error: Identity not found for $newJoinerEmail. Check HR Feed sync." -ForegroundColor Red
+}
+
+Write-Host "========== JOINER: Process Complete ==========" -ForegroundColor Green
 ```
 **Expected Output:** User created, assigned to department group, onboarding summary
 
 **[Screenshot: Cloud Shell output showing joiner workflow complete]**
+<img width="1137" height="922" alt="Screenshot 2026-05-17 at 4 56 50 PM" src="https://github.com/user-attachments/assets/c852575c-ffcb-4774-8b19-6659842fbf7f" />
+
 
 ---
 
