@@ -104,8 +104,8 @@ Navigate to https://azure.microsoft.com/en-ca/free/ and click **"Start free"**
 3. Note your **Tenant ID** and **Primary Domain** (you'll need these later)
 
 **Tenant Details:**
-- Tenant ID: `[Your-Tenant-ID-Here]`
-- Primary Domain: `[Your-Domain-Here].onmicrosoft.com`
+- Tenant ID: `50be3b2c-9368-49b7-a5c3-1f9923e6ac8a`
+- Primary Domain: `tushararora107gmail099.onmicrosoft.com`
 
 **[Screenshot: Azure AD Overview showing Tenant ID]**
 
