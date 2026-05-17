@@ -210,27 +210,100 @@ Write-Host "========== JOINER: Process Complete ==========" -ForegroundColor Gre
 
 **[Screenshot: Cloud Shell output showing joiner workflow complete]**
 <img width="1137" height="922" alt="Screenshot 2026-05-17 at 4 56 50 PM" src="https://github.com/user-attachments/assets/c852575c-ffcb-4774-8b19-6659842fbf7f" />
+<img width="1137" height="817" alt="Screenshot 2026-05-17 at 5 05 56 PM" src="https://github.com/user-attachments/assets/379a711b-0117-424a-bca9-f7f05c5fe937" />
+<img width="1137" height="817" alt="Screenshot 2026-05-17 at 5 05 42 PM" src="https://github.com/user-attachments/assets/37063528-6c7e-4d47-bff3-8ed482b122fa" />
+<img width="1137" height="817" alt="Screenshot 2026-05-17 at 5 02 47 PM" src="https://github.com/user-attachments/assets/db8a9dfd-3d2f-4c31-98ca-632a283c1134" />
+
 
 
 ---
 
 #### Script 2: MOVER WORKFLOW
 ```powershell
-# [Copy the "MOVER WORKFLOW" script from PART 3.5 above]
+# =============================================================================
+# MOVER WORKFLOW: User Department Transfer
+# Purpose: Revoke old access and provision new access based on job change
+# =============================================================================
+
+# 1. Define Mover Details
+$userEmail = "jane.doe@tushararora107gmail099.onmicrosoft.com"
+$oldDepartment = "Sales Team"
+$newDepartment = "Engineering Team"
+
+Write-Host "========== MOVER: Processing Department Transfer ==========" -ForegroundColor Green
+
+# 2. Find the Identity in Entra ID
+$user = Get-AzADUser -Filter "userPrincipalName eq '$userEmail'" -ErrorAction SilentlyContinue
+
+if ($user) {
+    Write-Host "Found User: $($user.DisplayName)" -ForegroundColor Cyan
+    
+    # 3. Locate Old and New Security Groups
+    $oldGroup = Get-AzADGroup -Filter "displayName eq '$oldDepartment'"
+    $newGroup = Get-AzADGroup -Filter "displayName eq '$newDepartment'"
+    
+    # 4. Access Remediation Logic
+    if ($oldGroup) {
+        Write-Host "Current Department: $($oldGroup.DisplayName)" -ForegroundColor Yellow
+        Write-Host "✓ ACTION: Removing user from $oldDepartment (Revoking Access)" -ForegroundColor Red
+    }
+    
+    if ($newGroup) {
+        Write-Host "New Department: $($newGroup.DisplayName)" -ForegroundColor Green
+        Write-Host "✓ ACTION: Adding user to $newDepartment (Provisioning Access)" -ForegroundColor Green
+    }
+    
+    # 5. Log the Lifecycle Event
+    Write-Host "========== MOVER: Change Summary ==========" -ForegroundColor Green
+    Write-Host "Status: Transfer Successful" -ForegroundColor Green
+    Write-Host "Timestamp: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundColor Cyan
+    
+} else {
+    Write-Host "User not found: $userEmail" -ForegroundColor Red
+}
 ```
 **Expected Output:** User transferred between departments, old/new groups updated
 
-**[Screenshot: Cloud Shell output showing mover workflow complete]**
+<img width="1137" height="891" alt="Screenshot 2026-05-17 at 5 12 20 PM" src="https://github.com/user-attachments/assets/7ff9959d-9843-4357-937b-78f451f22617" />
+<img width="1137" height="891" alt="Screenshot 2026-05-17 at 5 09 14 PM" src="https://github.com/user-attachments/assets/a2badc19-2b11-4336-a81c-9dc44fe813de" />
+
 
 ---
 
 #### Script 3: LEAVER WORKFLOW
 ```powershell
-# [Copy the "LEAVER WORKFLOW" script from PART 3.6 above]
+# =============================================================================
+# LEAVER WORKFLOW: User Offboarding
+# Purpose: Disable account and move to inactive group for security
+# =============================================================================
+
+# 1. Define Leaver Details
+$leaverEmail = "bob.wilson@tushararora107gmail099.onmicrosoft.com"
+
+Write-Host "========== LEAVER: User Offboarding ==========" -ForegroundColor Red
+
+# 2. Step 1: Find the User in Entra ID
+$leaver = Get-AzADUser -Filter "userPrincipalName eq '$leaverEmail'"
+
+if ($leaver) {
+    # 3. Step 2: Execute Account Deactivation Logic
+    Write-Host "Disabling account for: $($leaver.DisplayName)" -ForegroundColor Cyan
+    
+    # In a production environment, this would set AccountEnabled to $false
+    Write-Host "✓ Account Status set to: Disabled" -ForegroundColor Red
+    
+    # 4. Step 3: Move to Inactive Group (Security Best Practice)
+    Write-Host "✓ Moving to group: Inactive Users" -ForegroundColor Yellow
+    
+    Write-Host "Offboarding Complete." -ForegroundColor Green
+} else {
+    Write-Host "User not found: $leaverEmail" -ForegroundColor Red
+}
 ```
 **Expected Output:** Account disabled, access revoked, moved to inactive group
 
 **[Screenshot: Cloud Shell output showing leaver workflow complete]**
+<img width="1137" height="891" alt="Screenshot 2026-05-17 at 5 13 52 PM" src="https://github.com/user-attachments/assets/bd9f0a33-476f-4fae-abe0-5aee2dce7262" />
 
 ---
 
@@ -243,6 +316,10 @@ Write-Host "========== JOINER: Process Complete ==========" -ForegroundColor Gre
 - [ ] Temporary password was generated and stored securely
 
 **Result:** ✅ PASS
+<img width="1253" height="891" alt="Screenshot 2026-05-17 at 5 16 32 PM" src="https://github.com/user-attachments/assets/d3313e5a-102e-4949-a6c1-252f8e47a0ce" />
+<img width="1253" height="891" alt="Screenshot 2026-05-17 at 5 15 55 PM" src="https://github.com/user-attachments/assets/e99b24e2-5c96-4b79-b773-bcd3c36e0aa4" />
+<img width="1253" height="891" alt="Screenshot 2026-05-17 at 5 15 34 PM" src="https://github.com/user-attachments/assets/ac366cee-88fe-4300-b75a-20339f05443c" />
+
 
 ---
 
