@@ -1,6 +1,5 @@
-<img width="1501" height="891" alt="Screenshot 2026-05-17 at 6 03 01 PM" src="https://github.com/user-attachments/assets/eb93d0f8-09b7-4a66-9b14-a50e5efb2f7e" />
-<img width="1501" height="891" alt="Screenshot 2026-05-17 at 6 02 41 PM" src="https://github.com/user-attachments/assets/c77216b9-296b-4cf0-8f9c-a93dd74a0a5f" />
-<img width="1501" height="891" alt="Screenshot 2026-05-17 at 6 02 06 PM" src="https://github.com/user-attachments/assets/1e18ab4e-3142-4c03-932f-bc6689187482" />
+
+
 # Azure AD User Lifecycle Management (JML) Lab
 
 **Created by:** Tushar Arora  
@@ -216,7 +215,7 @@ Write-Host "========== JOINER: Process Complete ==========" -ForegroundColor Gre
 <img width="1137" height="817" alt="Screenshot 2026-05-17 at 5 05 56 PM" src="https://github.com/user-attachments/assets/379a711b-0117-424a-bca9-f7f05c5fe937" />
 <img width="1137" height="817" alt="Screenshot 2026-05-17 at 5 05 42 PM" src="https://github.com/user-attachments/assets/37063528-6c7e-4d47-bff3-8ed482b122fa" />
 <img width="1137" height="817" alt="Screenshot 2026-05-17 at 5 02 47 PM" src="https://github.com/user-attachments/assets/db8a9dfd-3d2f-4c31-98ca-632a283c1134" />
-
+<img width="1501" height="891" alt="Screenshot 2026-05-17 at 6 03 01 PM" src="https://github.com/user-attachments/assets/eb93d0f8-09b7-4a66-9b14-a50e5efb2f7e" />
 
 
 ---
@@ -269,7 +268,7 @@ if ($user) {
 
 <img width="1137" height="891" alt="Screenshot 2026-05-17 at 5 12 20 PM" src="https://github.com/user-attachments/assets/7ff9959d-9843-4357-937b-78f451f22617" />
 <img width="1137" height="891" alt="Screenshot 2026-05-17 at 5 09 14 PM" src="https://github.com/user-attachments/assets/a2badc19-2b11-4336-a81c-9dc44fe813de" />
-
+<img width="1501" height="891" alt="Screenshot 2026-05-17 at 6 02 41 PM" src="https://github.com/user-attachments/assets/c77216b9-296b-4cf0-8f9c-a93dd74a0a5f" />
 
 ---
 
@@ -307,6 +306,7 @@ if ($leaver) {
 
 **[Screenshot: Cloud Shell output showing leaver workflow complete]**
 <img width="1137" height="891" alt="Screenshot 2026-05-17 at 5 13 52 PM" src="https://github.com/user-attachments/assets/bd9f0a33-476f-4fae-abe0-5aee2dce7262" />
+<img width="1501" height="891" alt="Screenshot 2026-05-17 at 6 02 06 PM" src="https://github.com/user-attachments/assets/1e18ab4e-3142-4c03-932f-bc6689187482" />
 
 ---
 
