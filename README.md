@@ -110,6 +110,8 @@ Navigate to https://azure.microsoft.com/en-ca/free/ and click **"Start free"**
 - Primary Domain: `tushararora107gmail099.onmicrosoft.com`
 
 **[Screenshot: Azure AD Overview showing Tenant ID]**
+<img width="1643" height="891" alt="Screenshot 2026-05-17 at 5 28 13 PM" src="https://github.com/user-attachments/assets/ef45a76e-6b4b-40b9-80ea-60cc2e7e5514" />
+<img width="1413" height="810" alt="Screenshot 2026-05-17 at 4 46 26 PM" src="https://github.com/user-attachments/assets/cf7dcc72-856c-44cb-80d7-573e257383e3" />
 
 ---
 
@@ -126,6 +128,18 @@ Create these three users (representing different JML stages):
 | **Bob Wilson** | Leaver example (offboarding) | bob.wilson@[domain].onmicrosoft.com |
 
 **[Screenshot: User creation form]**
+<img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 53 39 PM" src="https://github.com/user-attachments/assets/d63fe812-e8ca-4160-8989-41388a17b3d5" />
+<img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 53 18 PM" src="https://github.com/user-attachments/assets/65418e3d-e090-4654-a1e5-99bd7d507cfa" />
+<img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 53 09 PM" src="https://github.com/user-attachments/assets/78f7ef31-c720-4f94-81be-726a61bb36f9" />
+<img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 53 03 PM" src="https://github.com/user-attachments/assets/90c3e931-58c5-4407-8435-2a676e09195a" />
+<img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 52 36 PM" src="https://github.com/user-attachments/assets/c99054f6-bc40-4b18-87d0-0eee48dc41c3" />
+<img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 52 28 PM" src="https://github.com/user-attachments/assets/1a365b8d-97d9-4944-965e-327b9be0aed5" />
+<img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 52 23 PM" src="https://github.com/user-attachments/assets/5974b80a-f054-4dad-aebb-ea17b707facb" />
+<img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 51 36 PM" src="https://github.com/user-attachments/assets/43f71636-6be0-44ba-b38f-7d18b68ebce1" />
+<img width="850" height="922" alt="Screenshot 2026-05-17 at 4 51 05 PM" src="https://github.com/user-attachments/assets/ef0236af-7c23-4a6c-b926-e0ac8fe7c5b5" />
+<img width="850" height="922" alt="Screenshot 2026-05-17 at 4 50 38 PM" src="https://github.com/user-attachments/assets/52ca582c-6686-4e96-b11d-9c60ffb65959" />
+<img width="1413" height="810" alt="Screenshot 2026-05-17 at 4 48 17 PM" src="https://github.com/user-attachments/assets/1633e9c3-ca93-4cb2-91f8-304eb12944a7" />
+
 
 **[Screenshot: All 3 users listed in Azure AD portal]**
 
