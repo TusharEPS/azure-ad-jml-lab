@@ -128,7 +128,6 @@ Create these three users (representing different JML stages):
 | **Bob Wilson** | Leaver example (offboarding) | bob.wilson@[domain].onmicrosoft.com |
 
 **[Screenshot: User creation form]**
-<img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 53 39 PM" src="https://github.com/user-attachments/assets/d63fe812-e8ca-4160-8989-41388a17b3d5" />
 <img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 53 18 PM" src="https://github.com/user-attachments/assets/65418e3d-e090-4654-a1e5-99bd7d507cfa" />
 <img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 53 09 PM" src="https://github.com/user-attachments/assets/78f7ef31-c720-4f94-81be-726a61bb36f9" />
 <img width="1135" height="922" alt="Screenshot 2026-05-17 at 4 53 03 PM" src="https://github.com/user-attachments/assets/90c3e931-58c5-4407-8435-2a676e09195a" />
