@@ -94,6 +94,8 @@ Navigate to https://azure.microsoft.com/en-ca/free/ and click **"Start free"**
 4. You'll receive $200 credit + 12 months free services
 
 **[Screenshot: Azure account creation confirmation]**
+<img width="1271" height="810" alt="Screenshot 2026-05-17 at 4 43 18 PM" src="https://github.com/user-attachments/assets/667e6e3a-f4f7-46d7-aba0-7eb3797c0163" />
+
 
 ---
 
